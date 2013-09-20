@@ -8,8 +8,7 @@
 
 #import "ListViewController.h"
 
-@interface ListViewController ()
-
+@interface ListViewController () <UIAlertViewDelegate>
 @end
 
 @implementation ListViewController
@@ -31,7 +30,15 @@
 #pragma mark - Notifications
 
 - (void)didAddMedicin:(NSNotification *)notification {
-    [[[UIAlertView alloc] initWithTitle:@"Plan" message:@"Do you want to plan the medicin take in?" delegate:nil cancelButtonTitle:@"No" otherButtonTitles:@"Yes", nil] show];
+    [[[UIAlertView alloc] initWithTitle:@"Plan" message:@"Do you want to plan the medicin take in?" delegate:self cancelButtonTitle:@"No" otherButtonTitles:@"Yes", nil] show];
+}
+
+#pragma mark - Notifications
+
+- (void)alertView:(UIAlertView *)alertView clickedButtonAtIndex:(NSInteger)buttonIndex {
+    if (buttonIndex == 1) {
+        [self performSegueWithIdentifier:@"Plan" sender:nil];
+    }
 }
 
 #pragma mark - Actions

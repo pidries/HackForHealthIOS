@@ -21,7 +21,7 @@
     [self setReaderView];
     
     [[UINavigationBar appearance] setBarTintColor:[UIColor colorWithRed:0.200 green:0.592 blue:0.204 alpha:1.000]];
-    [[UINavigationBar appearance] setTitleTextAttributes:@{ UITextAttributeTextColor : [UIColor whiteColor] }];
+    [[UINavigationBar appearance] setTitleTextAttributes:@{ NSForegroundColorAttributeName : [UIColor whiteColor] }];
     [[UINavigationBar appearance] setTintColor:[UIColor whiteColor]];
     
     return YES;
@@ -35,7 +35,6 @@
     _readerView = [[ZBarReaderView alloc] initWithImageScanner:scanner];
     _readerView.trackingColor = [UIColor colorWithRed:0.180 green:0.357 blue:0.694 alpha:1.000];
     _readerView.device = [self camera];
-    [_readerView willRotateToInterfaceOrientation:UIInterfaceOrientationLandscapeRight duration:0];
     [_readerView start];
 }
 
@@ -43,7 +42,7 @@
 
 - (AVCaptureDevice *)camera {
     for (AVCaptureDevice *device in [AVCaptureDevice devicesWithMediaType:AVMediaTypeVideo]) {
-        if (device.position == AVCaptureDevicePositionFront) {
+        if (device.position == AVCaptureDevicePositionBack) {
             return device;
         }
     }

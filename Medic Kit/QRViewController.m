@@ -7,6 +7,7 @@
 //
 
 #import "QRViewController.h"
+#import "AddDetailViewController.h"
 
 #import "ZBarCameraSimulator.h"
 #import "ZBarReaderView.h"
@@ -56,13 +57,14 @@
 #pragma mark - Gestures
 
 - (void)didTapQRReaderView:(UIGestureRecognizer *)gesture {
-    [self performSegueWithIdentifier:@"Detail" sender:nil];
+    [self performSegueWithIdentifier:@"Detail" sender:@"123"];
 }
 
 #pragma mark - Segue
 
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
     if ([segue.identifier isEqualToString:@"Detail"]) {
+        ((AddDetailViewController *)segue.destinationViewController).number = sender;
     }
 }
 
@@ -71,8 +73,7 @@
 - (void)readerView:(ZBarReaderView *)readerView didReadSymbols:(ZBarSymbolSet *)symbols fromImage:(UIImage *)image {
     for (ZBarSymbol *symbol in symbols) {
         if (symbol.type == ZBAR_QRCODE) {
-            NSLog(@"QR: %@", symbol.data);
-            [self performSegueWithIdentifier:@"Detail" sender:nil];
+            [self performSegueWithIdentifier:@"Detail" sender:symbol.data];
         }
         break;
     }

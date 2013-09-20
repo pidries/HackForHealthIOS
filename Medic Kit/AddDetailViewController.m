@@ -20,6 +20,8 @@
     
     self.title = @"New medicin";
     
+    _titleLabel.text = _number;
+    
     self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemCancel target:self action:@selector(didPressCancel:)];
 }
 

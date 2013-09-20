@@ -58,6 +58,9 @@
 		9D66C5DA17ECE8050019B1F8 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9D66C5D917ECE8050019B1F8 /* AVFoundation.framework */; };
 		9D66C5DE17ECE9C40019B1F8 /* libiconv.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 9D66C5DD17ECE9C40019B1F8 /* libiconv.dylib */; };
 		9D66C5E117ECEA5C0019B1F8 /* AddDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D66C5E017ECEA5C0019B1F8 /* AddDetailViewController.m */; };
+		9D66C5E517ECF4550019B1F8 /* WizardPeriodViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D66C5E417ECF4540019B1F8 /* WizardPeriodViewController.m */; };
+		9D66C5E817ECF4660019B1F8 /* WizardTimeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D66C5E717ECF4660019B1F8 /* WizardTimeViewController.m */; };
+		9D66C5EB17ECF6EB0019B1F8 /* WizardFamilyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D66C5EA17ECF6EB0019B1F8 /* WizardFamilyViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -183,6 +186,12 @@
 		9D66C5DD17ECE9C40019B1F8 /* libiconv.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libiconv.dylib; path = usr/lib/libiconv.dylib; sourceTree = SDKROOT; };
 		9D66C5DF17ECEA5C0019B1F8 /* AddDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddDetailViewController.h; sourceTree = "<group>"; };
 		9D66C5E017ECEA5C0019B1F8 /* AddDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddDetailViewController.m; sourceTree = "<group>"; };
+		9D66C5E317ECF4540019B1F8 /* WizardPeriodViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WizardPeriodViewController.h; sourceTree = "<group>"; };
+		9D66C5E417ECF4540019B1F8 /* WizardPeriodViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WizardPeriodViewController.m; sourceTree = "<group>"; };
+		9D66C5E617ECF4660019B1F8 /* WizardTimeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WizardTimeViewController.h; sourceTree = "<group>"; };
+		9D66C5E717ECF4660019B1F8 /* WizardTimeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WizardTimeViewController.m; sourceTree = "<group>"; };
+		9D66C5E917ECF6EB0019B1F8 /* WizardFamilyViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WizardFamilyViewController.h; sourceTree = "<group>"; };
+		9D66C5EA17ECF6EB0019B1F8 /* WizardFamilyViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WizardFamilyViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -287,6 +296,12 @@
 				9D66C55117ECE5360019B1F8 /* QRViewController.m */,
 				9D66C5DF17ECEA5C0019B1F8 /* AddDetailViewController.h */,
 				9D66C5E017ECEA5C0019B1F8 /* AddDetailViewController.m */,
+				9D66C5E317ECF4540019B1F8 /* WizardPeriodViewController.h */,
+				9D66C5E417ECF4540019B1F8 /* WizardPeriodViewController.m */,
+				9D66C5E617ECF4660019B1F8 /* WizardTimeViewController.h */,
+				9D66C5E717ECF4660019B1F8 /* WizardTimeViewController.m */,
+				9D66C5E917ECF6EB0019B1F8 /* WizardFamilyViewController.h */,
+				9D66C5EA17ECF6EB0019B1F8 /* WizardFamilyViewController.m */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -575,6 +590,7 @@
 				9D66C52417ECE3B00019B1F8 /* AppDelegate.m in Sources */,
 				9D66C52017ECE3B00019B1F8 /* main.m in Sources */,
 				9D66C5C317ECE7620019B1F8 /* NSString+Coby.m in Sources */,
+				9D66C5EB17ECF6EB0019B1F8 /* WizardFamilyViewController.m in Sources */,
 				9D66C5BE17ECE7620019B1F8 /* AFXMLRequestOperation.m in Sources */,
 				9D66C5CD17ECE7620019B1F8 /* NSArray+MTLManipulationAdditions.m in Sources */,
 				9D66C55217ECE5360019B1F8 /* QRViewController.m in Sources */,
@@ -599,8 +615,10 @@
 				9D66C5C117ECE7620019B1F8 /* NSDictionary+Coby.m in Sources */,
 				9D66C5C817ECE7620019B1F8 /* MTLManagedObjectAdapter.m in Sources */,
 				9D66C5B717ECE7620019B1F8 /* AFHTTPClient.m in Sources */,
+				9D66C5E817ECF4660019B1F8 /* WizardTimeViewController.m in Sources */,
 				9D66C5C717ECE7620019B1F8 /* MTLJSONAdapter.m in Sources */,
 				9D66C5B817ECE7620019B1F8 /* AFHTTPRequestOperation.m in Sources */,
+				9D66C5E517ECF4550019B1F8 /* WizardPeriodViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
