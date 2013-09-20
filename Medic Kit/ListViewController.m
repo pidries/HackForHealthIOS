@@ -14,12 +14,24 @@
 
 @implementation ListViewController
 
+- (void)viewDidLoad {
+    [super viewDidLoad];
+    
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(didAddMedicin:) name:kDidAddMedicinNotification object:nil];
+}
+
 - (void)viewWillAppear:(BOOL)animated {
     [super viewWillAppear:animated];
     
     self.title = @"Medic Kit";
     
     self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemAdd target:self action:@selector(didPressAdd:)];
+}
+
+#pragma mark - Notifications
+
+- (void)didAddMedicin:(NSNotification *)notification {
+    [[[UIAlertView alloc] initWithTitle:@"Plan" message:@"Do you want to plan the medicin take in?" delegate:nil cancelButtonTitle:@"No" otherButtonTitles:@"Yes", nil] show];
 }
 
 #pragma mark - Actions

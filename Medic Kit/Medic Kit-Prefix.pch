@@ -10,7 +10,15 @@
 #warning "This project uses features only available in iOS SDK 5.0 and later."
 #endif
 
+#define medickit ((AppDelegate *)[UIApplication sharedApplication].delegate)
+
 #ifdef __OBJC__
     #import <UIKit/UIKit.h>
     #import <Foundation/Foundation.h>
+
+    #import "MBProgressHUD.h"
+    #import "Coby.h"
+    #import "AppDelegate.h"
 #endif
+
+#define kDidAddMedicinNotification @"kDidAddMedicinNotification"

@@ -8,17 +8,43 @@
 
 #import "QRViewController.h"
 
-@interface QRViewController ()
+#import "ZBarCameraSimulator.h"
+#import "ZBarReaderView.h"
+#import "ZBarSymbol.h"
+
+@interface QRViewController () <ZBarReaderViewDelegate> {
+    __weak IBOutlet UIView *_readerContainerView;
+}
 @end
 
 @implementation QRViewController
 
+- (void)viewDidLoad {
+    [super viewDidLoad];
+    
+    medickit.readerView.frame = _readerContainerView.bounds;
+    [_readerContainerView addSubview:medickit.readerView];
+    
+#ifdef DEBUG
+    UITapGestureRecognizer *gesture = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(didTapQRReaderView:)];
+    [medickit.readerView addGestureRecognizer:gesture];
+#endif
+}
+
 - (void)viewWillAppear:(BOOL)animated {
     [super viewWillAppear:animated];
     
-    self.title = @"Scan the medicin code";
+    self.title = @"Scan code";
     
     self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemCancel target:self action:@selector(didPressCancel:)];
+    
+    medickit.readerView.readerDelegate = self;
+}
+
+- (void)viewWillDisappear:(BOOL)animated {
+    [super viewDidDisappear:animated];
+    
+    medickit.readerView.readerDelegate = nil;
 }
 
 #pragma mark - Actions
@@ -27,6 +53,29 @@
     [self dismissViewControllerAnimated:YES completion:nil];
 }
 
+#pragma mark - Gestures
 
+- (void)didTapQRReaderView:(UIGestureRecognizer *)gesture {
+    [self performSegueWithIdentifier:@"Detail" sender:nil];
+}
+
+#pragma mark - Segue
+
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
+    if ([segue.identifier isEqualToString:@"Detail"]) {
+    }
+}
+
+#pragma mark - Reader
+
+- (void)readerView:(ZBarReaderView *)readerView didReadSymbols:(ZBarSymbolSet *)symbols fromImage:(UIImage *)image {
+    for (ZBarSymbol *symbol in symbols) {
+        if (symbol.type == ZBAR_QRCODE) {
+            NSLog(@"QR: %@", symbol.data);
+            [self performSegueWithIdentifier:@"Detail" sender:nil];
+        }
+        break;
+    }
+}
 
 @end
