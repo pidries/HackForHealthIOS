@@ -10,10 +10,10 @@
 
 @interface WizardPeriodViewController () {
     
-    NSNumber *amountMorning;
-    NSNumber *amountNoon;
-    NSNumber *amountAfternoon;
-    NSNumber *amountEvening;
+    int amountMorning;
+    int amountNoon;
+    int amountAfternoon;
+    int amountEvening;
     
     __weak IBOutlet UILabel *morningLabel;
     __weak IBOutlet UILabel *noonLabel;
@@ -42,10 +42,10 @@
 }
 
 -(void) reloadLabels {
-    morningLabel.text = [NSString stringWithFormat:@"%@", amountMorning];
-    noonLabel.text = [NSString stringWithFormat:@"%@", amountNoon];
-    afternoonLabel.text = [NSString stringWithFormat:@"%@", amountAfternoon];
-    eveningLabel.text = [NSString stringWithFormat:@"%@", amountEvening];
+    morningLabel.text = [NSString stringWithFormat:@"%d", amountMorning];
+    noonLabel.text = [NSString stringWithFormat:@"%d", amountNoon];
+    afternoonLabel.text = [NSString stringWithFormat:@"%d", amountAfternoon];
+    eveningLabel.text = [NSString stringWithFormat:@"%d", amountEvening];
 }
 
 #pragma mark - Actions
@@ -54,19 +54,19 @@
     [self dismissViewControllerAnimated:YES completion:nil];
 }
 - (IBAction)morningStep:(UIStepper*)sender {
-    amountMorning = [NSNumber numberWithDouble:[sender value]];
+    amountMorning = [sender value];
     [self reloadLabels];
 }
 - (IBAction)noonStep:(UIStepper*)sender {
-    amountNoon = [NSNumber numberWithDouble:[sender value]];
+    amountNoon = [sender value];
     [self reloadLabels];
 }
 - (IBAction)afternoonStep:(UIStepper*)sender {
-    amountAfternoon = [NSNumber numberWithDouble:[sender value]];
+    amountAfternoon = [sender value];
     [self reloadLabels];
 }
 - (IBAction)eveningStep:(UIStepper*)sender {
-    amountEvening =  [NSNumber numberWithDouble:[sender value]];
+    amountEvening =  [sender value];
     [self reloadLabels];
 }
 
