@@ -64,7 +64,7 @@
 
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
     if ([segue.identifier isEqualToString:@"Detail"]) {
-        ((AddDetailViewController *)segue.destinationViewController).medicine = sender;
+        ((AddDetailViewController *)segue.destinationViewController).medicine = [_medicines objectAtIndex:0];
     }
 }
 

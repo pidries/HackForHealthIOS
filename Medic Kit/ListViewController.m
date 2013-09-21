@@ -7,6 +7,7 @@
 //
 
 #import "ListViewController.h"
+#import "QRViewController.h"
 #import "Medicine.h"
 #import "DetailViewController.h"
 
@@ -100,15 +101,15 @@
 #pragma mark - Actions
 
 - (IBAction)didPressAdd:(id)sender {
-    UIWebView *webView = [[UIWebView alloc] initWithFrame:CGRectMake(10, 10, 200, 200)];
+//    UIWebView *webView = [[UIWebView alloc] initWithFrame:CGRectMake(10, 10, 200, 200)];
+//    
+//    NSURL *targetURL = [NSURL URLWithString:@"http://developer.apple.com/iphone/library/documentation/UIKit/Reference/UIWebView_Class/UIWebView_Class.pdf"];
+//    NSURLRequest *request = [NSURLRequest requestWithURL:targetURL];
+//    [webView loadRequest:request];
+//    
+//    [self.view addSubview:webView];
     
-    NSURL *targetURL = [NSURL URLWithString:@"http://developer.apple.com/iphone/library/documentation/UIKit/Reference/UIWebView_Class/UIWebView_Class.pdf"];
-    NSURLRequest *request = [NSURLRequest requestWithURL:targetURL];
-    [webView loadRequest:request];
-    
-    [self.view addSubview:webView];
-    
-    //[self performSegueWithIdentifier:@"Add" sender:medicines];
+    [self performSegueWithIdentifier:@"Add" sender:nil];
 }
 
 - (void) prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
