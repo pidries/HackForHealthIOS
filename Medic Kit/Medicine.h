@@ -14,5 +14,6 @@
 @property (strong, nonatomic) NSString* name;
 @property (strong, nonatomic) NSString* description;
 @property (strong, nonatomic) Packaging* package;
+@property (strong, nonatomic) NSDate* nextIntake;
 
 @end
