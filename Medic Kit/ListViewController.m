@@ -7,8 +7,12 @@
 //
 
 #import "ListViewController.h"
+#import "Medicine.h"
 
 @interface ListViewController () <UIAlertViewDelegate>
+
+@property NSArray* medicines;
+
 @end
 
 @implementation ListViewController
@@ -17,6 +21,14 @@
     [super viewDidLoad];
     
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(didAddMedicin:) name:kDidAddMedicinNotification object:nil];
+    
+    Medicine *med = [Medicine new];
+    med.name = @"Dafalgan";
+    med.description = @"Painkiller";
+    Packaging *package = [Packaging new];
+    package.id = [NSNumber numberWithInt:12345];
+    package.description = @"Dafalgan tab Forte 50x 1 g";
+    
 }
 
 - (void)viewWillAppear:(BOOL)animated {

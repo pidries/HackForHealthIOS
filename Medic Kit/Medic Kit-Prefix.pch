@@ -19,6 +19,7 @@
     #import "MBProgressHUD.h"
     #import "Coby.h"
     #import "AppDelegate.h"
+    #import "Globals.h"
 #endif
 
 #define kDidAddMedicinNotification @"kDidAddMedicinNotification"

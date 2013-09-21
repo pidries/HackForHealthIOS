@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		80B8455B17ED854700F3DC74 /* RemoteClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 80B8455A17ED854700F3DC74 /* RemoteClient.m */; };
+		80B8456017ED8F9100F3DC74 /* Medicine.m in Sources */ = {isa = PBXBuildFile; fileRef = 80B8455F17ED8F9100F3DC74 /* Medicine.m */; };
+		80B8456317ED902900F3DC74 /* Packaging.m in Sources */ = {isa = PBXBuildFile; fileRef = 80B8456217ED902900F3DC74 /* Packaging.m */; };
 		9D66C51417ECE3B00019B1F8 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9D66C51317ECE3B00019B1F8 /* Foundation.framework */; };
 		9D66C51617ECE3B00019B1F8 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9D66C51517ECE3B00019B1F8 /* CoreGraphics.framework */; };
 		9D66C51817ECE3B00019B1F8 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9D66C51717ECE3B00019B1F8 /* UIKit.framework */; };
@@ -74,6 +77,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		80B8455917ED854700F3DC74 /* RemoteClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RemoteClient.h; sourceTree = "<group>"; };
+		80B8455A17ED854700F3DC74 /* RemoteClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RemoteClient.m; sourceTree = "<group>"; };
+		80B8455E17ED8F9100F3DC74 /* Medicine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Medicine.h; sourceTree = "<group>"; };
+		80B8455F17ED8F9100F3DC74 /* Medicine.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Medicine.m; sourceTree = "<group>"; };
+		80B8456117ED902900F3DC74 /* Packaging.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Packaging.h; sourceTree = "<group>"; };
+		80B8456217ED902900F3DC74 /* Packaging.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Packaging.m; sourceTree = "<group>"; };
+		80B8456517ED918700F3DC74 /* Globals.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Globals.h; sourceTree = "<group>"; };
 		9D66C51017ECE3B00019B1F8 /* Medic Kit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Medic Kit.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		9D66C51317ECE3B00019B1F8 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		9D66C51517ECE3B00019B1F8 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -221,6 +231,26 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		80B8455817ED84FA00F3DC74 /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				80B8455917ED854700F3DC74 /* RemoteClient.h */,
+				80B8455A17ED854700F3DC74 /* RemoteClient.m */,
+			);
+			name = Networking;
+			sourceTree = "<group>";
+		};
+		80B8455D17ED8F7500F3DC74 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				80B8455E17ED8F9100F3DC74 /* Medicine.h */,
+				80B8455F17ED8F9100F3DC74 /* Medicine.m */,
+				80B8456117ED902900F3DC74 /* Packaging.h */,
+				80B8456217ED902900F3DC74 /* Packaging.m */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
 		9D66C50717ECE3B00019B1F8 = {
 			isa = PBXGroup;
 			children = (
@@ -258,6 +288,8 @@
 				9D66C52217ECE3B00019B1F8 /* AppDelegate.h */,
 				9D66C52317ECE3B00019B1F8 /* AppDelegate.m */,
 				9D66C52B17ECE3B00019B1F8 /* Images.xcassets */,
+				80B8455817ED84FA00F3DC74 /* Networking */,
+				80B8455D17ED8F7500F3DC74 /* Models */,
 				9D66C54817ECE3BE0019B1F8 /* UI */,
 				9D66C54917ECE5020019B1F8 /* Controllers */,
 				9D66C55417ECE73D0019B1F8 /* Vendor */,
@@ -273,6 +305,7 @@
 				9D66C51C17ECE3B00019B1F8 /* InfoPlist.strings */,
 				9D66C51F17ECE3B00019B1F8 /* main.m */,
 				9D66C52117ECE3B00019B1F8 /* Medic Kit-Prefix.pch */,
+				80B8456517ED918700F3DC74 /* Globals.h */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -586,6 +619,7 @@
 				9D66C5B917ECE7620019B1F8 /* AFImageRequestOperation.m in Sources */,
 				9D66C5D217ECE7620019B1F8 /* NSValueTransformer+MTLPredefinedTransformerAdditions.m in Sources */,
 				9D66C5C217ECE7620019B1F8 /* NSObject+Coby.m in Sources */,
+				80B8455B17ED854700F3DC74 /* RemoteClient.m in Sources */,
 				9D66C5D317ECE7620019B1F8 /* MBProgressHUD.m in Sources */,
 				9D66C52417ECE3B00019B1F8 /* AppDelegate.m in Sources */,
 				9D66C52017ECE3B00019B1F8 /* main.m in Sources */,
@@ -600,6 +634,7 @@
 				9D66C5BF17ECE7620019B1F8 /* UIImageView+AFNetworking.m in Sources */,
 				9D66C5BD17ECE7620019B1F8 /* AFURLConnectionOperation.m in Sources */,
 				9D66C5BB17ECE7620019B1F8 /* AFNetworkActivityIndicatorManager.m in Sources */,
+				80B8456317ED902900F3DC74 /* Packaging.m in Sources */,
 				9D66C5D017ECE7620019B1F8 /* NSObject+MTLComparisonAdditions.m in Sources */,
 				9D66C5CF17ECE7620019B1F8 /* NSError+MTLModelException.m in Sources */,
 				9D66C5CA17ECE7620019B1F8 /* MTLModel.m in Sources */,
@@ -618,6 +653,7 @@
 				9D66C5E817ECF4660019B1F8 /* WizardTimeViewController.m in Sources */,
 				9D66C5C717ECE7620019B1F8 /* MTLJSONAdapter.m in Sources */,
 				9D66C5B817ECE7620019B1F8 /* AFHTTPRequestOperation.m in Sources */,
+				80B8456017ED8F9100F3DC74 /* Medicine.m in Sources */,
 				9D66C5E517ECF4550019B1F8 /* WizardPeriodViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
