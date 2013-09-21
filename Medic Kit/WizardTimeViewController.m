@@ -11,7 +11,10 @@
 @interface WizardTimeViewController ()
 
 @property (strong, nonatomic) IBOutlet UIScrollView *scrollView;
+
 @property (weak, nonatomic) IBOutlet UIView *contentView;
+
+@property (weak, nonatomic) IBOutlet UISwitch *sliderTillEmpty;
 
 @end
 
@@ -35,6 +38,12 @@
 
 - (IBAction)didPressCancel:(id)sender {
     [self dismissViewControllerAnimated:YES completion:nil];
+}
+- (IBAction)didPressNext:(id)sender {
+    if (_sliderTillEmpty.isOn)
+        [self performSegueWithIdentifier:@"toEndDate" sender:sender];
+    else
+        [self performSegueWithIdentifier:@"toFamily" sender:sender];
 }
 
 @end
