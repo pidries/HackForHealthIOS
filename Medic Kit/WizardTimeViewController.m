@@ -40,7 +40,7 @@
     [self dismissViewControllerAnimated:YES completion:nil];
 }
 - (IBAction)didPressNext:(id)sender {
-    if (_sliderTillEmpty.isOn)
+    if (!_sliderTillEmpty.isOn)
         [self performSegueWithIdentifier:@"toEndDate" sender:sender];
     else
         [self performSegueWithIdentifier:@"toFamily" sender:sender];
