@@ -67,15 +67,24 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="xB2-KT-KYm">
-                                <rect key="frame" x="20" y="115" width="280" height="279"/>
+                                <rect key="frame" x="20" y="115" width="280" height="104"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" id="0AE-Cs-DA4">
+                                <rect key="frame" x="20" y="253" width="280" height="254"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" id="LTX-fX-eud"/>
+                    <connections>
+                        <outlet property="medicineImage" destination="0AE-Cs-DA4" id="wo6-Z0-Q94"/>
+                        <outlet property="medicineLabel" destination="xB2-KT-KYm" id="9X0-bX-BMQ"/>
+                        <outlet property="medicineTitle" destination="EOv-zW-DZx" id="EUi-Wz-Fuh"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="5qv-Lf-G2j" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

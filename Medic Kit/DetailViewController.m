@@ -9,6 +9,9 @@
 #import "DetailViewController.h"
 
 @interface DetailViewController ()
+@property (weak, nonatomic) IBOutlet UIImageView *medicineImage;
+@property (weak, nonatomic) IBOutlet UILabel *medicineLabel;
+@property (weak, nonatomic) IBOutlet UILabel *medicineTitle;
 @end
 
 @implementation DetailViewController
@@ -17,6 +20,9 @@
     [super viewWillAppear:animated];
     
     self.title = @"Detail";
+    _medicineTitle.text = _medicine.name;
+    _medicineLabel.text = _medicine.package.description;
+    _medicineImage.image = _medicine.package.image;
     
     
 }

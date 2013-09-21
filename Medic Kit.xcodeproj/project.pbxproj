@@ -64,6 +64,9 @@
 		9D66C5E517ECF4550019B1F8 /* WizardPeriodViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D66C5E417ECF4540019B1F8 /* WizardPeriodViewController.m */; };
 		9D66C5E817ECF4660019B1F8 /* WizardTimeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D66C5E717ECF4660019B1F8 /* WizardTimeViewController.m */; };
 		9D66C5EB17ECF6EB0019B1F8 /* WizardFamilyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D66C5EA17ECF6EB0019B1F8 /* WizardFamilyViewController.m */; };
+		A6B98EE617EDA463007C021E /* 1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A6B98EE317EDA463007C021E /* 1.jpg */; };
+		A6B98EE717EDA463007C021E /* 3.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A6B98EE417EDA463007C021E /* 3.jpg */; };
+		A6B98EE817EDA463007C021E /* 2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A6B98EE517EDA463007C021E /* 2.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -202,6 +205,9 @@
 		9D66C5E717ECF4660019B1F8 /* WizardTimeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WizardTimeViewController.m; sourceTree = "<group>"; };
 		9D66C5E917ECF6EB0019B1F8 /* WizardFamilyViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WizardFamilyViewController.h; sourceTree = "<group>"; };
 		9D66C5EA17ECF6EB0019B1F8 /* WizardFamilyViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WizardFamilyViewController.m; sourceTree = "<group>"; };
+		A6B98EE317EDA463007C021E /* 1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 1.jpg; sourceTree = "<group>"; };
+		A6B98EE417EDA463007C021E /* 3.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 3.jpg; sourceTree = "<group>"; };
+		A6B98EE517EDA463007C021E /* 2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 2.jpg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -285,6 +291,7 @@
 		9D66C51917ECE3B00019B1F8 /* Medic Kit */ = {
 			isa = PBXGroup;
 			children = (
+				A6B98EDA17EDA1F7007C021E /* Assets */,
 				9D66C52217ECE3B00019B1F8 /* AppDelegate.h */,
 				9D66C52317ECE3B00019B1F8 /* AppDelegate.m */,
 				9D66C52B17ECE3B00019B1F8 /* Images.xcassets */,
@@ -514,6 +521,16 @@
 			path = Resources;
 			sourceTree = "<group>";
 		};
+		A6B98EDA17EDA1F7007C021E /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				A6B98EE317EDA463007C021E /* 1.jpg */,
+				A6B98EE417EDA463007C021E /* 3.jpg */,
+				A6B98EE517EDA463007C021E /* 2.jpg */,
+			);
+			name = Assets;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -590,12 +607,15 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A6B98EE817EDA463007C021E /* 2.jpg in Resources */,
 				9D66C52C17ECE3B00019B1F8 /* Images.xcassets in Resources */,
 				9D66C5C617ECE7620019B1F8 /* Mantle-Info.plist in Resources */,
 				9D66C51E17ECE3B00019B1F8 /* InfoPlist.strings in Resources */,
 				9D66C52717ECE3B00019B1F8 /* Main.storyboard in Resources */,
 				9D66C5D817ECE7620019B1F8 /* zbar-samples.png in Resources */,
+				A6B98EE717EDA463007C021E /* 3.jpg in Resources */,
 				9D66C5D617ECE7620019B1F8 /* zbar-help.html in Resources */,
+				A6B98EE617EDA463007C021E /* 1.jpg in Resources */,
 				9D66C5D517ECE7620019B1F8 /* zbar-back.png in Resources */,
 				9D66C5D717ECE7620019B1F8 /* zbar-helpicons.png in Resources */,
 			);

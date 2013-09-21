@@ -13,6 +13,7 @@
 @property (strong, nonatomic) NSNumber* id;
 @property (strong, nonatomic) NSNumber* amount;
 @property (strong, nonatomic) NSNumber* price;
+@property (strong, nonatomic) UIImage* image;
 
 @property (strong, nonatomic) NSString* description;
 @property (strong, nonatomic) NSString* galenicForm;
