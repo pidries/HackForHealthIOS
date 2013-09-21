@@ -10,6 +10,9 @@
 
 @interface WizardTimeViewController ()
 
+@property (strong, nonatomic) IBOutlet UIScrollView *scrollView;
+@property (weak, nonatomic) IBOutlet UIView *contentView;
+
 @end
 
 @implementation WizardTimeViewController
@@ -19,6 +22,11 @@
     self.title = @"Add plan step 2";
     
     self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemCancel target:self action:@selector(didPressCancel:)];
+}
+
+-(void)viewDidLoad {
+    
+    _scrollView.contentSize = CGSizeMake(_contentView.frame.size.width, _contentView.frame.size.height);
 }
 
 #pragma mark - Actions
