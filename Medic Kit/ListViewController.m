@@ -10,6 +10,7 @@
 #import "QRViewController.h"
 #import "Medicine.h"
 #import "DetailViewController.h"
+#import "WizardPeriodViewController.h"
 
 @interface ListViewController () <UIAlertViewDelegate> {
     NSMutableArray* medicines;
@@ -101,13 +102,6 @@
 #pragma mark - Actions
 
 - (IBAction)didPressAdd:(id)sender {
-//    UIWebView *webView = [[UIWebView alloc] initWithFrame:CGRectMake(10, 10, 200, 200)];
-//    
-//    NSURL *targetURL = [NSURL URLWithString:@"http://developer.apple.com/iphone/library/documentation/UIKit/Reference/UIWebView_Class/UIWebView_Class.pdf"];
-//    NSURLRequest *request = [NSURLRequest requestWithURL:targetURL];
-//    [webView loadRequest:request];
-//    
-//    [self.view addSubview:webView];
     
     [self performSegueWithIdentifier:@"Add" sender:nil];
 }
@@ -116,6 +110,16 @@
     if ([segue.identifier isEqualToString:@"Detail"]) {
         DetailViewController *destination = [segue destinationViewController];
         destination.medicine = [medicines objectAtIndex:self.tableView.indexPathForSelectedRow.row];
+    }
+    else if ([segue.identifier isEqualToString:@"Add"]) {
+        UINavigationController *destination = [segue destinationViewController];
+        QRViewController *child = destination.childViewControllers[0];
+        child.medicines = medicines;
+    }
+    else if ([segue.identifier isEqualToString:@"Plan"]) {
+        UINavigationController *destination = [segue destinationViewController];
+        WizardPeriodViewController *child = destination.childViewControllers[0];
+        child.medicine = medicines.lastObject;
     }
 }
 
