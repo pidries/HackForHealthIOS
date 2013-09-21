@@ -64,6 +64,14 @@
 		9D66C5E517ECF4550019B1F8 /* WizardPeriodViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D66C5E417ECF4540019B1F8 /* WizardPeriodViewController.m */; };
 		9D66C5E817ECF4660019B1F8 /* WizardTimeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D66C5E717ECF4660019B1F8 /* WizardTimeViewController.m */; };
 		9D66C5EB17ECF6EB0019B1F8 /* WizardFamilyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D66C5EA17ECF6EB0019B1F8 /* WizardFamilyViewController.m */; };
+		A61E4DEF17EE12AA00FE519D /* Message.m in Sources */ = {isa = PBXBuildFile; fileRef = A61E4DEE17EE12AA00FE519D /* Message.m */; };
+		A61E4DF217EE195C00FE519D /* MessageDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A61E4DF117EE195C00FE519D /* MessageDetailViewController.m */; };
+		A6B6A40B17EE2BA700CDDB89 /* calendar@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A6B6A40817EE2BA700CDDB89 /* calendar@2x.png */; };
+		A6B6A40C17EE2BA700CDDB89 /* envelope@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A6B6A40917EE2BA700CDDB89 /* envelope@2x.png */; };
+		A6B6A40D17EE2BA700CDDB89 /* list@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A6B6A40A17EE2BA700CDDB89 /* list@2x.png */; };
+		A6B6A40F17EE2C1700CDDB89 /* cart@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A6B6A40E17EE2C1700CDDB89 /* cart@2x.png */; };
+		A6B6A41117EE2F8200CDDB89 /* 4.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A6B6A41017EE2F8200CDDB89 /* 4.jpg */; };
+		A6B6A41317EE350500CDDB89 /* cabinet@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A6B6A41217EE350500CDDB89 /* cabinet@2x.png */; };
 		A6B98EE617EDA463007C021E /* 1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A6B98EE317EDA463007C021E /* 1.jpg */; };
 		A6B98EE717EDA463007C021E /* 3.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A6B98EE417EDA463007C021E /* 3.jpg */; };
 		A6B98EE817EDA463007C021E /* 2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A6B98EE517EDA463007C021E /* 2.jpg */; };
@@ -209,6 +217,16 @@
 		9D66C5E717ECF4660019B1F8 /* WizardTimeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WizardTimeViewController.m; sourceTree = "<group>"; };
 		9D66C5E917ECF6EB0019B1F8 /* WizardFamilyViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WizardFamilyViewController.h; sourceTree = "<group>"; };
 		9D66C5EA17ECF6EB0019B1F8 /* WizardFamilyViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WizardFamilyViewController.m; sourceTree = "<group>"; };
+		A61E4DED17EE12AA00FE519D /* Message.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Message.h; sourceTree = "<group>"; };
+		A61E4DEE17EE12AA00FE519D /* Message.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Message.m; sourceTree = "<group>"; };
+		A61E4DF017EE195C00FE519D /* MessageDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MessageDetailViewController.h; sourceTree = "<group>"; };
+		A61E4DF117EE195C00FE519D /* MessageDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MessageDetailViewController.m; sourceTree = "<group>"; };
+		A6B6A40817EE2BA700CDDB89 /* calendar@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "calendar@2x.png"; path = "Medic Kit/SVG/calendar@2x.png"; sourceTree = SOURCE_ROOT; };
+		A6B6A40917EE2BA700CDDB89 /* envelope@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "envelope@2x.png"; path = "Medic Kit/SVG/envelope@2x.png"; sourceTree = SOURCE_ROOT; };
+		A6B6A40A17EE2BA700CDDB89 /* list@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "list@2x.png"; path = "Medic Kit/SVG/list@2x.png"; sourceTree = SOURCE_ROOT; };
+		A6B6A40E17EE2C1700CDDB89 /* cart@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "cart@2x.png"; path = "Medic Kit/SVG/cart@2x.png"; sourceTree = SOURCE_ROOT; };
+		A6B6A41017EE2F8200CDDB89 /* 4.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 4.jpg; sourceTree = "<group>"; };
+		A6B6A41217EE350500CDDB89 /* cabinet@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "cabinet@2x.png"; path = "Medic Kit/SVG/cabinet@2x.png"; sourceTree = SOURCE_ROOT; };
 		A6B98EE317EDA463007C021E /* 1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 1.jpg; sourceTree = "<group>"; };
 		A6B98EE417EDA463007C021E /* 3.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 3.jpg; sourceTree = "<group>"; };
 		A6B98EE517EDA463007C021E /* 2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 2.jpg; sourceTree = "<group>"; };
@@ -265,6 +283,8 @@
 				80B8455F17ED8F9100F3DC74 /* Medicine.m */,
 				80B8456117ED902900F3DC74 /* Packaging.h */,
 				80B8456217ED902900F3DC74 /* Packaging.m */,
+				A61E4DED17EE12AA00FE519D /* Message.h */,
+				A61E4DEE17EE12AA00FE519D /* Message.m */,
 			);
 			name = Models;
 			sourceTree = "<group>";
@@ -362,6 +382,8 @@
 				A6B98EF017EE0F5A007C021E /* ShopListViewController.m */,
 				A6B98EF217EE0F64007C021E /* MessagesViewController.h */,
 				A6B98EF317EE0F64007C021E /* MessagesViewController.m */,
+				A61E4DF017EE195C00FE519D /* MessageDetailViewController.h */,
+				A61E4DF117EE195C00FE519D /* MessageDetailViewController.m */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -541,9 +563,23 @@
 			path = Resources;
 			sourceTree = "<group>";
 		};
+		A6B6A3F117EE275300CDDB89 /* PNG */ = {
+			isa = PBXGroup;
+			children = (
+				A6B6A41217EE350500CDDB89 /* cabinet@2x.png */,
+				A6B6A40E17EE2C1700CDDB89 /* cart@2x.png */,
+				A6B6A40817EE2BA700CDDB89 /* calendar@2x.png */,
+				A6B6A40917EE2BA700CDDB89 /* envelope@2x.png */,
+				A6B6A40A17EE2BA700CDDB89 /* list@2x.png */,
+			);
+			path = PNG;
+			sourceTree = "<group>";
+		};
 		A6B98EDA17EDA1F7007C021E /* Assets */ = {
 			isa = PBXGroup;
 			children = (
+				A6B6A41017EE2F8200CDDB89 /* 4.jpg */,
+				A6B6A3F117EE275300CDDB89 /* PNG */,
 				A6B98EE317EDA463007C021E /* 1.jpg */,
 				A6B98EE417EDA463007C021E /* 3.jpg */,
 				A6B98EE517EDA463007C021E /* 2.jpg */,
@@ -630,16 +666,22 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A6B6A40D17EE2BA700CDDB89 /* list@2x.png in Resources */,
 				A6B98EE817EDA463007C021E /* 2.jpg in Resources */,
 				9D66C52C17ECE3B00019B1F8 /* Images.xcassets in Resources */,
+				A6B6A40F17EE2C1700CDDB89 /* cart@2x.png in Resources */,
 				9D66C5C617ECE7620019B1F8 /* Mantle-Info.plist in Resources */,
 				9D66C51E17ECE3B00019B1F8 /* InfoPlist.strings in Resources */,
 				9D66C52717ECE3B00019B1F8 /* Main.storyboard in Resources */,
 				9D66C5D817ECE7620019B1F8 /* zbar-samples.png in Resources */,
+				A6B6A41117EE2F8200CDDB89 /* 4.jpg in Resources */,
+				A6B6A40C17EE2BA700CDDB89 /* envelope@2x.png in Resources */,
 				A6B98EE717EDA463007C021E /* 3.jpg in Resources */,
 				9D66C5D617ECE7620019B1F8 /* zbar-help.html in Resources */,
 				A6B98EE617EDA463007C021E /* 1.jpg in Resources */,
+				A6B6A41317EE350500CDDB89 /* cabinet@2x.png in Resources */,
 				9D66C5D517ECE7620019B1F8 /* zbar-back.png in Resources */,
+				A6B6A40B17EE2BA700CDDB89 /* calendar@2x.png in Resources */,
 				9D66C5D717ECE7620019B1F8 /* zbar-helpicons.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -665,6 +707,8 @@
 				9D66C5C217ECE7620019B1F8 /* NSObject+Coby.m in Sources */,
 				80B8455B17ED854700F3DC74 /* RemoteClient.m in Sources */,
 				A6B98EF417EE0F64007C021E /* MessagesViewController.m in Sources */,
+				A61E4DF217EE195C00FE519D /* MessageDetailViewController.m in Sources */,
+				A61E4DEF17EE12AA00FE519D /* Message.m in Sources */,
 				9D66C5D317ECE7620019B1F8 /* MBProgressHUD.m in Sources */,
 				9D66C52417ECE3B00019B1F8 /* AppDelegate.m in Sources */,
 				9D66C52017ECE3B00019B1F8 /* main.m in Sources */,

@@ -1,9 +1,73 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="4510" systemVersion="12F37" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" initialViewController="Sr5-v9-Fm4">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="4510" systemVersion="12F37" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" initialViewController="ggW-Ow-U45">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3742"/>
     </dependencies>
     <scenes>
+        <!--Navigation Controller - Messages-->
+        <scene sceneID="fAb-1R-HL7">
+            <objects>
+                <navigationController title="Messages" definesPresentationContext="YES" id="Mj1-rN-3ZG" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Messages" image="envelope.png" badgeValue="2" id="ICd-ZC-zfc"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="ST4-Hd-bOs">
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="SOp-iB-asx" kind="relationship" relationship="rootViewController" id="2eD-nI-fAR"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ugj-Ia-Cet" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="165" y="-1476"/>
+        </scene>
+        <!--Navigation Controller - Cabinet-->
+        <scene sceneID="y1Q-Ax-Vmz">
+            <objects>
+                <navigationController title="Cabinet" definesPresentationContext="YES" id="tWJ-wG-MTo" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Cabinet" image="cabinet.png" id="bqo-40-fpC"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="avg-lW-5kg">
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="Qit-bi-fqM" kind="relationship" relationship="rootViewController" id="c7q-cr-rDj"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="mXL-Zs-4rf" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="165" y="-763"/>
+        </scene>
+        <!--Navigation Controller - Intake-->
+        <scene sceneID="RWl-CT-uqQ">
+            <objects>
+                <navigationController title="Intake" definesPresentationContext="YES" id="n3l-Rp-GkD" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Intake" image="calendar.png" badgeValue="1" id="rZI-MM-yUs"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="zkD-Ob-qp1">
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="gbH-7a-Bnt" kind="relationship" relationship="rootViewController" id="eTc-ad-K3v"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="rXH-hD-o8h" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="165" y="-75"/>
+        </scene>
+        <!--Navigation Controller - Shopping List-->
+        <scene sceneID="AkD-HW-bbo">
+            <objects>
+                <navigationController title="Shopping List" definesPresentationContext="YES" id="UQX-Ag-SrG" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Shoplist" image="cart.png" id="ne1-wH-0CK"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="taL-MB-kMb">
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="Qc3-U1-sY4" kind="relationship" relationship="rootViewController" id="0hl-pP-75H"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="yyr-C0-ts7" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="165" y="599"/>
+        </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="HDm-eM-RGy">
             <objects>
@@ -17,15 +81,15 @@
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                     </tabBar>
                     <connections>
-                        <segue destination="Qit-bi-fqM" kind="relationship" relationship="viewControllers" id="qMx-bl-LNt"/>
-                        <segue destination="gbH-7a-Bnt" kind="relationship" relationship="viewControllers" id="5X7-fE-dA2"/>
-                        <segue destination="Qc3-U1-sY4" kind="relationship" relationship="viewControllers" id="PSI-Or-ucB"/>
-                        <segue destination="SOp-iB-asx" kind="relationship" relationship="viewControllers" id="CqA-d1-xuX"/>
+                        <segue destination="tWJ-wG-MTo" kind="relationship" relationship="viewControllers" id="MTg-F1-Oew"/>
+                        <segue destination="n3l-Rp-GkD" kind="relationship" relationship="viewControllers" id="msT-dP-Zza"/>
+                        <segue destination="UQX-Ag-SrG" kind="relationship" relationship="viewControllers" id="enh-5B-Mk2"/>
+                        <segue destination="Mj1-rN-3ZG" kind="relationship" relationship="viewControllers" id="vYX-D0-XkC"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ZsK-za-G4j" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="75" y="-75"/>
+            <point key="canvasLocation" x="-985" y="-63"/>
         </scene>
         <!--Messages View Controller - Messages-->
         <scene sceneID="fcU-oR-Oku">
@@ -36,21 +100,24 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
-                            <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" id="0IK-FR-PY7">
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="blue" accessoryType="disclosureIndicator" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="Cell" id="0IK-FR-PY7">
                                 <rect key="frame" x="0.0" y="86" width="320" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="0IK-FR-PY7" id="ryA-Wi-J9a">
-                                    <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="287" height="43"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Bericht 1" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="QqG-Vt-TJu">
-                                            <rect key="frame" x="20" y="11" width="69" height="21"/>
+                                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="QqG-Vt-TJu">
+                                            <rect key="frame" x="20" y="11" width="0.0" height="0.0"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                     </subviews>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <segue destination="GaJ-T8-3hH" kind="push" identifier="Detail" id="ibJ-nR-Agx"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>
@@ -59,10 +126,58 @@
                         </connections>
                     </tableView>
                     <tabBarItem key="tabBarItem" title="Messages" id="rVB-f6-r7a"/>
+                    <navigationItem key="navigationItem" title="Messages" id="D35-y9-wvM"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hpi-m9-zQc" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="611" y="-1476"/>
+        </scene>
+        <!--Message Detail View Controller - MessageDetail-->
+        <scene sceneID="JJZ-jR-24j">
+            <objects>
+                <viewController title="MessageDetail" id="GaJ-T8-3hH" customClass="MessageDetailViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="TA2-N1-IoM">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Received :" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="l5C-oN-nE7">
+                                <rect key="frame" x="20" y="72" width="280" height="25"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <color key="textColor" red="0.5215686559677124" green="0.7568628191947937" blue="0.5215686559677124" alpha="1" colorSpace="deviceRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Message :" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="M26-NO-bct">
+                                <rect key="frame" x="20" y="152" width="280" height="25"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <color key="textColor" red="0.5215686559677124" green="0.7568628191947937" blue="0.5215686559677124" alpha="1" colorSpace="deviceRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="hV7-60-7xe">
+                                <rect key="frame" x="20" y="105" width="280" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="wordWrap" numberOfLines="10" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="IGt-KU-Taf">
+                                <rect key="frame" x="20" y="176" width="280" height="101"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="fKK-uQ-lV4"/>
+                    <connections>
+                        <outlet property="receivedDate" destination="hV7-60-7xe" id="s54-db-UB9"/>
+                        <outlet property="receivedMessage" destination="IGt-KU-Taf" id="2aj-bV-dcR"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="nB0-6C-gzF" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1164" y="-1476"/>
         </scene>
         <!--List View Controller - Medic Kit-->
         <scene sceneID="UbN-SC-b8l">
@@ -103,7 +218,7 @@
                         </prototypes>
                     </tableView>
                     <tabBarItem key="tabBarItem" title="Intakes" id="DDC-me-FAQ"/>
-                    <navigationItem key="navigationItem" title="Root View Controller" id="d3M-VL-6bb"/>
+                    <navigationItem key="navigationItem" title="Intakes" id="d3M-VL-6bb"/>
                     <connections>
                         <segue destination="GOq-uE-I1R" kind="modal" identifier="Add" id="jbn-il-ZbP"/>
                         <segue destination="pk2-fR-WNA" kind="modal" identifier="Plan" id="JEL-vf-dsB"/>
@@ -113,16 +228,16 @@
             </objects>
             <point key="canvasLocation" x="611" y="-75"/>
         </scene>
-        <!--Shop List View Controller - Shoplist-->
+        <!--Shop List View Controller - Shopping List-->
         <scene sceneID="zik-IZ-fp6">
             <objects>
-                <tableViewController id="Qc3-U1-sY4" customClass="ShopListViewController" sceneMemberID="viewController">
+                <tableViewController title="Shopping List" id="Qc3-U1-sY4" customClass="ShopListViewController" sceneMemberID="viewController">
                     <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="qRX-xz-AyM">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
-                            <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" id="vUP-MZ-n91">
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="Cell" id="vUP-MZ-n91">
                                 <rect key="frame" x="0.0" y="86" width="320" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="vUP-MZ-n91" id="G7S-V3-VAa">
@@ -145,6 +260,7 @@
                         </connections>
                     </tableView>
                     <tabBarItem key="tabBarItem" title="Shoplist" id="yce-F2-YLW"/>
+                    <navigationItem key="navigationItem" title="Shopping List" id="3la-NF-yyf"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dWE-e9-kt7" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -158,16 +274,29 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="xB2-KT-KYm">
-                                <rect key="frame" x="20" y="71" width="280" height="148"/>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="wordWrap" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="xB2-KT-KYm">
+                                <rect key="frame" x="20" y="71" width="280" height="88"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" id="0AE-Cs-DA4">
-                                <rect key="frame" x="20" y="222" width="280" height="254"/>
+                                <rect key="frame" x="20" y="167" width="280" height="254"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="ot6-Mi-88M">
+                                <rect key="frame" x="20" y="451" width="280" height="53"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                                <color key="backgroundColor" red="0.20000000000000001" green="0.59215686270000001" blue="0.20392156859999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="25"/>
+                                <state key="normal" title="Administration">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="didPressAdd:" destination="Koy-IH-ife" eventType="touchUpInside" id="bdQ-Vs-aLH"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
@@ -221,21 +350,24 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
-                            <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" id="nQW-T3-lXo">
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="blue" accessoryType="disclosureIndicator" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="Cell" id="nQW-T3-lXo">
                                 <rect key="frame" x="0.0" y="86" width="320" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="nQW-T3-lXo" id="mdK-il-M8h">
-                                    <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="287" height="43"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="cLi-gK-hwi">
-                                            <rect key="frame" x="20" y="11" width="42" height="21"/>
+                                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="cLi-gK-hwi">
+                                            <rect key="frame" x="20" y="11" width="0.0" height="0.0"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                     </subviews>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <segue destination="kmZ-PQ-fdg" kind="push" identifier="Detail" id="hIB-SP-yGZ"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>
@@ -244,6 +376,10 @@
                         </connections>
                     </tableView>
                     <tabBarItem key="tabBarItem" title="Cabinet" id="Ox0-QZ-qlR"/>
+                    <navigationItem key="navigationItem" title="Cabinet" id="KjK-kq-s4J"/>
+                    <connections>
+                        <segue destination="GOq-uE-I1R" kind="modal" identifier="Add" id="OLQ-ei-Dqt"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Z0B-sg-C7J" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -707,28 +843,21 @@ AQABAAEAAQAB//+dkAEA//+PgAAE//+dkAEI//+dkAEMUERUAFBTVABQV1QAUFBUAAAAAAEAAAABA
             </objects>
             <point key="canvasLocation" x="2122" y="599"/>
         </scene>
-        <!--Navigation Controller-->
-        <scene sceneID="XJJ-tu-Xee">
-            <objects>
-                <navigationController definesPresentationContext="YES" id="Sr5-v9-Fm4" sceneMemberID="viewController">
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="yp5-P7-22n">
-                        <autoresizingMask key="autoresizingMask"/>
-                    </navigationBar>
-                    <connections>
-                        <segue destination="ggW-Ow-U45" kind="relationship" relationship="rootViewController" id="V3b-eX-Snv"/>
-                    </connections>
-                </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="QB5-NI-57j" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="-458" y="-76"/>
-        </scene>
     </scenes>
+    <resources>
+        <image name="cabinet.png" width="30" height="30"/>
+        <image name="calendar.png" width="30" height="30"/>
+        <image name="cart.png" width="30" height="30"/>
+        <image name="envelope.png" width="30" height="30"/>
+    </resources>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
         <simulatedOrientationMetrics key="orientation"/>
         <simulatedScreenMetrics key="destination" type="retina4"/>
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
-        <segue reference="uTM-Qb-qRg"/>
+        <segue reference="jbn-il-ZbP"/>
+        <segue reference="up3-qC-c70"/>
+        <segue reference="hIB-SP-yGZ"/>
     </inferredMetricsTieBreakers>
 </document>

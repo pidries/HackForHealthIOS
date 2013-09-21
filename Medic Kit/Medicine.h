@@ -11,6 +11,7 @@
 
 @interface Medicine : NSObject
 
+@property (strong, nonatomic) NSString* id;
 @property (strong, nonatomic) NSString* name;
 @property (strong, nonatomic) NSString* description;
 @property (strong, nonatomic) Packaging* package;

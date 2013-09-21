@@ -1,18 +1,20 @@
 //
-//  ShopListViewController.m
+//  MessageDetailViewController.m
 //  Medic Kit
 //
 //  Created by Pieter-Jan Dries on 21/09/13.
 //  Copyright (c) 2013 fousa. All rights reserved.
 //
 
-#import "ShopListViewController.h"
+#import "MessageDetailViewController.h"
 
-@interface ShopListViewController ()
+@interface MessageDetailViewController ()
+@property (weak, nonatomic) IBOutlet UILabel *receivedDate;
+@property (weak, nonatomic) IBOutlet UILabel *receivedMessage;
 
 @end
 
-@implementation ShopListViewController
+@implementation MessageDetailViewController
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -38,12 +40,16 @@
 - (void)viewWillAppear:(BOOL)animated {
     [super viewWillAppear:animated];
     
-    self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemAdd target:self action:@selector(didPressAdd:)];
-}
+    NSDateFormatter *formatter = [[NSDateFormatter alloc]init];
+    [formatter setDateFormat:@"MM/dd/yyyy HH:mm a"];
 
-- (IBAction)didPressAdd:(id)sender {
     
-
+    _receivedDate.text = [formatter stringFromDate:_message.receivedDate];
+    _receivedMessage.text = _message.message;
+    
+    
 }
+
+
 
 @end

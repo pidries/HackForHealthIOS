@@ -33,7 +33,8 @@
     NSDate *date = [formatter2 dateFromString:@"9/22/2013 7:15 PM"];
     
     Medicine *med = [Medicine new];
-    med.name = @"Dafalgan";
+    med.id = @"1449834";
+    med.name = @"Dafalgan Forte";
     med.description = @"Painkiller";
     med.nextIntake = date;
     Packaging *package = [Packaging new];
@@ -58,7 +59,7 @@
     package2.leafletNL = @"http://bijsluiters.fagg-afmps.be/registrationSearchServlet?key=BE229214&leafletType=leafletNL";
     med2.package = package2;
     
-    [medicines addObject:med2];
+    //[medicines addObject:med2];
     
     NSDate *date3 = [formatter2 dateFromString:@"9/23/2013 8:30 AM"];
     
@@ -69,12 +70,27 @@
     Packaging *package3 = [Packaging new];
     package3.id = [NSNumber numberWithInt:12345];
     package3.description = @"Sinutab Forte 20x tablets 500/60 mg";
-    UIImageView *myImageView = [[UIImageView alloc] init];
     package3.image = [UIImage imageNamed:@"3.jpg"];
     package3.leafletNL = @"http://bijsluiters.fagg-afmps.be/registrationSearchServlet?key=BE240186&leafletType=leafletNL";
     med3.package = package3;
     
-    [medicines addObject:med3];
+    //[medicines addObject:med3];
+    
+    NSDate *date4 = [formatter2 dateFromString:@"9/24/2013 8:30 AM"];
+    
+    Medicine *med4 = [Medicine new];
+    med4.id = @"0869347";
+    med4.name = @"Seretide diskus 50/500 mg";
+    med4.description = @"Painkiller";
+    med4.nextIntake = date4;
+    Packaging *package4 = [Packaging new];
+    package4.id = [NSNumber numberWithInt:869347];
+    package4.description = @"Seretide diskus 50/500 mg inhalation powder";
+    package4.image = [UIImage imageNamed:@"4.jpg"];
+    package4.leafletNL = @"http://bijsluiters.fagg-afmps.be/DownloadLeafletServlet?id=4680";
+    med4.package = package4;
+    
+    // TODO this one has to be added after adding a new medicine.
     
     formatter =  [[NSDateFormatter alloc]init];
     [formatter setDateFormat:@"dd/MM/yyyy HH:mm"];
@@ -85,6 +101,7 @@
     
     self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemAdd target:self action:@selector(didPressAdd:)];
 }
+
 
 #pragma mark - Notifications
 
