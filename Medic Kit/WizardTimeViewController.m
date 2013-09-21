@@ -27,6 +27,8 @@
 -(void)viewDidLoad {
     
     _scrollView.contentSize = CGSizeMake(_contentView.frame.size.width, _contentView.frame.size.height);
+    CGFloat topOffset = self.navigationController.navigationBar.frame.size.height + [[UIApplication sharedApplication] statusBarFrame].size.height;
+    _scrollView.contentInset = UIEdgeInsetsMake(-topOffset, 0.0, 0.0, 0.0);
 }
 
 #pragma mark - Actions
