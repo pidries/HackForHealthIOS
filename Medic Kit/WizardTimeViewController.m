@@ -22,7 +22,7 @@
 
 - (void)viewWillAppear:(BOOL)animated {
     
-    self.title = @"Add plan step 2";
+    self.title = _medicine.name;
     
     self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemCancel target:self action:@selector(didPressCancel:)];
 }
