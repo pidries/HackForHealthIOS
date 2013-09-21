@@ -73,7 +73,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" id="0AE-Cs-DA4">
-                                <rect key="frame" x="20" y="253" width="280" height="254"/>
+                                <rect key="frame" x="20" y="222" width="280" height="254"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                         </subviews>
@@ -180,18 +180,31 @@
                                     <stepper opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" continuous="NO" maximumValue="100" id="WMs-Bw-xav">
                                         <rect key="frame" x="206" y="20" width="94" height="29"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                        <color key="tintColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        <connections>
+                                            <action selector="morningStep:" destination="Tfa-0A-b3V" eventType="valueChanged" id="dBm-IH-b6V"/>
+                                        </connections>
                                     </stepper>
                                     <stepper opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" continuous="NO" maximumValue="100" id="Wyw-0L-DCl">
                                         <rect key="frame" x="206" y="57" width="94" height="29"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                        <connections>
+                                            <action selector="noonStep:" destination="Tfa-0A-b3V" eventType="valueChanged" id="GZH-18-pRQ"/>
+                                        </connections>
                                     </stepper>
                                     <stepper opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" continuous="NO" maximumValue="100" id="Im2-9S-YKK">
                                         <rect key="frame" x="206" y="94" width="94" height="29"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                        <connections>
+                                            <action selector="afternoonStep:" destination="Tfa-0A-b3V" eventType="valueChanged" id="MyR-v0-gzv"/>
+                                        </connections>
                                     </stepper>
                                     <stepper opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" continuous="NO" maximumValue="100" id="tVS-Yr-1vV">
                                         <rect key="frame" x="206" y="131" width="94" height="29"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                        <connections>
+                                            <action selector="eveningStep:" destination="Tfa-0A-b3V" eventType="valueChanged" id="bTd-Rn-fJf"/>
+                                        </connections>
                                     </stepper>
                                     <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="7o2-sf-yyN">
                                         <rect key="frame" x="133" y="59" width="54" height="25"/>
@@ -218,6 +231,12 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" id="6uH-t1-k0o"/>
+                    <connections>
+                        <outlet property="afternoonLabel" destination="HcK-g0-hZB" id="cU3-pp-wIP"/>
+                        <outlet property="eveningLabel" destination="XUA-ZB-hPY" id="gQe-xr-HTa"/>
+                        <outlet property="morningLabel" destination="tcE-Ey-tKd" id="vbe-as-TPB"/>
+                        <outlet property="noonLabel" destination="7o2-sf-yyN" id="OUd-wE-2ti"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="D5h-9R-sXA" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
