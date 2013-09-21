@@ -72,9 +72,7 @@
 
 - (void)readerView:(ZBarReaderView *)readerView didReadSymbols:(ZBarSymbolSet *)symbols fromImage:(UIImage *)image {
     for (ZBarSymbol *symbol in symbols) {
-        if (symbol.type == ZBAR_QRCODE) {
-            [self performSegueWithIdentifier:@"Detail" sender:symbol.data];
-        }
+        [self performSegueWithIdentifier:@"Detail" sender:symbol.data];
         break;
     }
 }

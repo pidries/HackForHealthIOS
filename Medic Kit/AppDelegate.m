@@ -50,4 +50,20 @@
     return [AVCaptureDevice defaultDeviceWithMediaType:AVMediaTypeVideo];
 }
 
+- (void)applicationDidEnterBackground:(UIApplication *)application {
+    NSDate *alertTime = [[NSDate date]
+                         dateByAddingTimeInterval:10];
+    UIApplication* app = [UIApplication sharedApplication];
+    UILocalNotification* notifyAlarm = [[UILocalNotification alloc]
+                                        init];
+    if (notifyAlarm)
+    {
+        notifyAlarm.fireDate = alertTime;
+        notifyAlarm.timeZone = [NSTimeZone defaultTimeZone];
+        notifyAlarm.repeatInterval = 0;
+        notifyAlarm.soundName = UILocalNotificationDefaultSoundName;
+        notifyAlarm.alertBody = @"Pill notification: Sinutab";
+        [app scheduleLocalNotification:notifyAlarm];
+    }
+}
 @end
