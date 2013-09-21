@@ -53,6 +53,7 @@
 - (IBAction)didPressCancel:(id)sender {
     [self dismissViewControllerAnimated:YES completion:nil];
 }
+
 - (IBAction)morningStep:(UIStepper*)sender {
     amountMorning = [sender value];
     [self reloadLabels];
