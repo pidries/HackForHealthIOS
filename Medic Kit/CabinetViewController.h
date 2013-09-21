@@ -10,4 +10,6 @@
 
 @interface CabinetViewController : UITableViewController
 
+@property (strong, nonatomic) NSMutableArray *medicines;
+
 @end
