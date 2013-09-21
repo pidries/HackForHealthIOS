@@ -68,6 +68,9 @@
 		A6B98EE717EDA463007C021E /* 3.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A6B98EE417EDA463007C021E /* 3.jpg */; };
 		A6B98EE817EDA463007C021E /* 2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A6B98EE517EDA463007C021E /* 2.jpg */; };
 		A6B98EEB17EDE4F1007C021E /* LeafletViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A6B98EEA17EDE4F1007C021E /* LeafletViewController.m */; };
+		A6B98EEE17EE0F47007C021E /* CabinetViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A6B98EED17EE0F47007C021E /* CabinetViewController.m */; };
+		A6B98EF117EE0F5A007C021E /* ShopListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A6B98EF017EE0F5A007C021E /* ShopListViewController.m */; };
+		A6B98EF417EE0F64007C021E /* MessagesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A6B98EF317EE0F64007C021E /* MessagesViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -211,6 +214,12 @@
 		A6B98EE517EDA463007C021E /* 2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 2.jpg; sourceTree = "<group>"; };
 		A6B98EE917EDE4F1007C021E /* LeafletViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LeafletViewController.h; sourceTree = "<group>"; };
 		A6B98EEA17EDE4F1007C021E /* LeafletViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LeafletViewController.m; sourceTree = "<group>"; };
+		A6B98EEC17EE0F47007C021E /* CabinetViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CabinetViewController.h; sourceTree = "<group>"; };
+		A6B98EED17EE0F47007C021E /* CabinetViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CabinetViewController.m; sourceTree = "<group>"; };
+		A6B98EEF17EE0F5A007C021E /* ShopListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ShopListViewController.h; sourceTree = "<group>"; };
+		A6B98EF017EE0F5A007C021E /* ShopListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ShopListViewController.m; sourceTree = "<group>"; };
+		A6B98EF217EE0F64007C021E /* MessagesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MessagesViewController.h; sourceTree = "<group>"; };
+		A6B98EF317EE0F64007C021E /* MessagesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MessagesViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -347,6 +356,12 @@
 				9D66C5EA17ECF6EB0019B1F8 /* WizardFamilyViewController.m */,
 				A6B98EE917EDE4F1007C021E /* LeafletViewController.h */,
 				A6B98EEA17EDE4F1007C021E /* LeafletViewController.m */,
+				A6B98EEC17EE0F47007C021E /* CabinetViewController.h */,
+				A6B98EED17EE0F47007C021E /* CabinetViewController.m */,
+				A6B98EEF17EE0F5A007C021E /* ShopListViewController.h */,
+				A6B98EF017EE0F5A007C021E /* ShopListViewController.m */,
+				A6B98EF217EE0F64007C021E /* MessagesViewController.h */,
+				A6B98EF317EE0F64007C021E /* MessagesViewController.m */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -644,10 +659,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				9D66C5C517ECE7620019B1F8 /* EXTScope.m in Sources */,
+				A6B98EEE17EE0F47007C021E /* CabinetViewController.m in Sources */,
 				9D66C5B917ECE7620019B1F8 /* AFImageRequestOperation.m in Sources */,
 				9D66C5D217ECE7620019B1F8 /* NSValueTransformer+MTLPredefinedTransformerAdditions.m in Sources */,
 				9D66C5C217ECE7620019B1F8 /* NSObject+Coby.m in Sources */,
 				80B8455B17ED854700F3DC74 /* RemoteClient.m in Sources */,
+				A6B98EF417EE0F64007C021E /* MessagesViewController.m in Sources */,
 				9D66C5D317ECE7620019B1F8 /* MBProgressHUD.m in Sources */,
 				9D66C52417ECE3B00019B1F8 /* AppDelegate.m in Sources */,
 				9D66C52017ECE3B00019B1F8 /* main.m in Sources */,
@@ -681,6 +698,7 @@
 				9D66C5B717ECE7620019B1F8 /* AFHTTPClient.m in Sources */,
 				9D66C5E817ECF4660019B1F8 /* WizardTimeViewController.m in Sources */,
 				9D66C5C717ECE7620019B1F8 /* MTLJSONAdapter.m in Sources */,
+				A6B98EF117EE0F5A007C021E /* ShopListViewController.m in Sources */,
 				9D66C5B817ECE7620019B1F8 /* AFHTTPRequestOperation.m in Sources */,
 				80B8456017ED8F9100F3DC74 /* Medicine.m in Sources */,
 				9D66C5E517ECF4550019B1F8 /* WizardPeriodViewController.m in Sources */,
