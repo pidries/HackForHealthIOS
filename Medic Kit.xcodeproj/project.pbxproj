@@ -67,6 +67,7 @@
 		A6B98EE617EDA463007C021E /* 1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A6B98EE317EDA463007C021E /* 1.jpg */; };
 		A6B98EE717EDA463007C021E /* 3.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A6B98EE417EDA463007C021E /* 3.jpg */; };
 		A6B98EE817EDA463007C021E /* 2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A6B98EE517EDA463007C021E /* 2.jpg */; };
+		A6B98EEB17EDE4F1007C021E /* LeafletViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A6B98EEA17EDE4F1007C021E /* LeafletViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -208,6 +209,8 @@
 		A6B98EE317EDA463007C021E /* 1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 1.jpg; sourceTree = "<group>"; };
 		A6B98EE417EDA463007C021E /* 3.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 3.jpg; sourceTree = "<group>"; };
 		A6B98EE517EDA463007C021E /* 2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 2.jpg; sourceTree = "<group>"; };
+		A6B98EE917EDE4F1007C021E /* LeafletViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LeafletViewController.h; sourceTree = "<group>"; };
+		A6B98EEA17EDE4F1007C021E /* LeafletViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LeafletViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -342,6 +345,8 @@
 				9D66C5E717ECF4660019B1F8 /* WizardTimeViewController.m */,
 				9D66C5E917ECF6EB0019B1F8 /* WizardFamilyViewController.h */,
 				9D66C5EA17ECF6EB0019B1F8 /* WizardFamilyViewController.m */,
+				A6B98EE917EDE4F1007C021E /* LeafletViewController.h */,
+				A6B98EEA17EDE4F1007C021E /* LeafletViewController.m */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -655,6 +660,7 @@
 				9D66C5CB17ECE7620019B1F8 /* MTLReflection.m in Sources */,
 				9D66C5E117ECEA5C0019B1F8 /* AddDetailViewController.m in Sources */,
 				9D66C5BF17ECE7620019B1F8 /* UIImageView+AFNetworking.m in Sources */,
+				A6B98EEB17EDE4F1007C021E /* LeafletViewController.m in Sources */,
 				9D66C5BD17ECE7620019B1F8 /* AFURLConnectionOperation.m in Sources */,
 				9D66C5BB17ECE7620019B1F8 /* AFNetworkActivityIndicatorManager.m in Sources */,
 				80B8456317ED902900F3DC74 /* Packaging.m in Sources */,

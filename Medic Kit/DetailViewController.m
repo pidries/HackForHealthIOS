@@ -7,6 +7,7 @@
 //
 
 #import "DetailViewController.h"
+#import "LeafletViewController.h"
 
 @interface DetailViewController ()
 @property (weak, nonatomic) IBOutlet UIImageView *medicineImage;
@@ -25,6 +26,13 @@
     _medicineImage.image = _medicine.package.image;
     
     
+}
+
+- (void) prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
+    if ([segue.identifier isEqualToString:@"Leaflet"]) {
+        LeafletViewController *destination = [segue destinationViewController];
+        destination.url = _medicine.package.leafletNL;
+    }
 }
 
 @end

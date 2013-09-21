@@ -40,6 +40,7 @@
     package.id = [NSNumber numberWithInt:12345];
     package.description = @"Dafalgan tab Forte 50x 1 g";
     package.image = [UIImage imageNamed:@"1.jpg"];
+    package.leafletNL = @"http://bijsluiters.fagg-afmps.be/registrationSearchServlet?key=BE259551&leafletType=leafletNL";
     med.package = package;
     
     [medicines addObject:med];
@@ -47,13 +48,14 @@
     NSDate *date2 = [formatter2 dateFromString:@"9/23/2013 8:00 AM"];
     
     Medicine *med2 = [Medicine new];
-    med2.name = @"Perdolan";
+    med2.name = @"Orofar Lidocaine";
     med2.description = @"Painkiller";
     med2.nextIntake = date2;
     Packaging *package2 = [Packaging new];
     package2.id = [NSNumber numberWithInt:12345];
-    package2.description = @"PERDOLAN Compositum: 30 tablets";
+    package2.description = @"Orofar Lidocaine 1/1 36 parels Munt";
     package2.image = [UIImage imageNamed:@"2.jpg"];
+    package2.leafletNL = @"http://bijsluiters.fagg-afmps.be/registrationSearchServlet?key=BE229214&leafletType=leafletNL";
     med2.package = package2;
     
     [medicines addObject:med2];
@@ -69,6 +71,7 @@
     package3.description = @"Sinutab Forte 20x tablets 500/60 mg";
     UIImageView *myImageView = [[UIImageView alloc] init];
     package3.image = [UIImage imageNamed:@"3.jpg"];
+    package3.leafletNL = @"http://bijsluiters.fagg-afmps.be/registrationSearchServlet?key=BE240186&leafletType=leafletNL";
     med3.package = package3;
     
     [medicines addObject:med3];
@@ -79,8 +82,6 @@
 
 - (void)viewWillAppear:(BOOL)animated {
     [super viewWillAppear:animated];
-    
-    self.title = @"Medicine cabinet";
     
     self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemAdd target:self action:@selector(didPressAdd:)];
 }
