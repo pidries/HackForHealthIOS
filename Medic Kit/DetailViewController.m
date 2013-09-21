@@ -19,7 +19,7 @@
 - (void)viewWillAppear:(BOOL)animated {
     [super viewWillAppear:animated];
     
-    self.title = @"Detail";
+    self.title = _medicine.name;
     _medicineTitle.text = _medicine.name;
     _medicineLabel.text = _medicine.package.description;
     _medicineImage.image = _medicine.package.image;

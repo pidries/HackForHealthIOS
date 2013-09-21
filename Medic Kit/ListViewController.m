@@ -100,7 +100,15 @@
 #pragma mark - Actions
 
 - (IBAction)didPressAdd:(id)sender {
-    [self performSegueWithIdentifier:@"Add" sender:nil];
+    UIWebView *webView = [[UIWebView alloc] initWithFrame:CGRectMake(10, 10, 200, 200)];
+    
+    NSURL *targetURL = [NSURL URLWithString:@"http://developer.apple.com/iphone/library/documentation/UIKit/Reference/UIWebView_Class/UIWebView_Class.pdf"];
+    NSURLRequest *request = [NSURLRequest requestWithURL:targetURL];
+    [webView loadRequest:request];
+    
+    [self.view addSubview:webView];
+    
+    //[self performSegueWithIdentifier:@"Add" sender:medicines];
 }
 
 - (void) prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {

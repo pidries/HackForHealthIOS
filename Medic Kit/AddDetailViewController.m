@@ -18,9 +18,7 @@
 
 - (void)viewWillAppear:(BOOL)animated {
     
-    self.title = @"New medicin";
-    
-    _titleLabel.text = _number;
+    self.title = _medicine.name;
     
     self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemCancel target:self action:@selector(didPressCancel:)];
 }

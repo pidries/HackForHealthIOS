@@ -6,5 +6,10 @@
 //  Copyright (c) 2013 fousa. All rights reserved.
 //
 
+#import "Medicine.h"
+
 @interface WizardPeriodViewController : UIViewController
+
+@property (strong,nonatomic) Medicine *medicine;
+
 @end

@@ -7,4 +7,6 @@
 //
 
 @interface QRViewController : UIViewController
+
+@property (strong, nonatomic) NSArray *medicines;
 @end

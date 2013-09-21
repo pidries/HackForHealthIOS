@@ -6,6 +6,8 @@
 //  Copyright (c) 2013 fousa. All rights reserved.
 //
 
+#import "Medicine.h"
+
 @interface AddDetailViewController : UIViewController
-@property (nonatomic, strong) NSString *number;
+@property (strong,nonatomic) Medicine *medicine;
 @end
