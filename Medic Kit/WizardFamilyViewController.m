@@ -6,6 +6,8 @@
 //  Copyright (c) 2013 fousa. All rights reserved.
 //
 
+#import <QuartzCore/QuartzCore.h>
+
 #import "WizardFamilyViewController.h"
 
 @interface WizardFamilyViewController () {
@@ -40,19 +42,25 @@
     switch (indexPath.row) {
         case 0:
             cell.textLabel.text = @"Rachel Brown";
+            cell.imageView.image = [UIImage imageNamed:@"rachel.png"];
             break;
         case 1:
             cell.textLabel.text = @"Monica Geller";
+            cell.imageView.image = [UIImage imageNamed:@"monica.png"];
             break;
         case 2:
             cell.textLabel.text = @"Ross Geller";
+            cell.imageView.image = [UIImage imageNamed:@"ross.png"];
             break;
         case 3:
             cell.textLabel.text = @"Chandler Bing";
+            cell.imageView.image = [UIImage imageNamed:@"chandler.png"];
             break;
         default:
             break;
     }
+    cell.imageView.layer.masksToBounds = YES;
+    cell.imageView.layer.cornerRadius = 22.5;
     
     return cell;
 }

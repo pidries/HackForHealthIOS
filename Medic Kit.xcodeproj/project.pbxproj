@@ -67,6 +67,11 @@
 		9D86BBEF17EEE5760028FD81 /* MessageCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D86BBEE17EEE5760028FD81 /* MessageCell.m */; };
 		9D86BBF117EEEA530028FD81 /* UIUnreadIndicator@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 9D86BBF017EEEA530028FD81 /* UIUnreadIndicator@2x.png */; };
 		9D86BBF317EEEB600028FD81 /* none@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 9D86BBF217EEEB600028FD81 /* none@2x.png */; };
+		9D86BBF517EEEDAC0028FD81 /* rachel@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 9D86BBF417EEEDAC0028FD81 /* rachel@2x.png */; };
+		9D86BBF717EEEDCB0028FD81 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9D86BBF617EEEDCB0028FD81 /* QuartzCore.framework */; };
+		9D86BBFB17EEEEE70028FD81 /* monica@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 9D86BBF817EEEEE70028FD81 /* monica@2x.png */; };
+		9D86BBFC17EEEEE70028FD81 /* ross@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 9D86BBF917EEEEE70028FD81 /* ross@2x.png */; };
+		9D86BBFD17EEEEE70028FD81 /* chandler@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 9D86BBFA17EEEEE70028FD81 /* chandler@2x.png */; };
 		A61E4DEF17EE12AA00FE519D /* Message.m in Sources */ = {isa = PBXBuildFile; fileRef = A61E4DEE17EE12AA00FE519D /* Message.m */; };
 		A61E4DF217EE195C00FE519D /* MessageDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A61E4DF117EE195C00FE519D /* MessageDetailViewController.m */; };
 		A6B6A40B17EE2BA700CDDB89 /* calendar@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A6B6A40817EE2BA700CDDB89 /* calendar@2x.png */; };
@@ -224,6 +229,11 @@
 		9D86BBEE17EEE5760028FD81 /* MessageCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MessageCell.m; sourceTree = "<group>"; };
 		9D86BBF017EEEA530028FD81 /* UIUnreadIndicator@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "UIUnreadIndicator@2x.png"; sourceTree = "<group>"; };
 		9D86BBF217EEEB600028FD81 /* none@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "none@2x.png"; sourceTree = "<group>"; };
+		9D86BBF417EEEDAC0028FD81 /* rachel@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "rachel@2x.png"; sourceTree = "<group>"; };
+		9D86BBF617EEEDCB0028FD81 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		9D86BBF817EEEEE70028FD81 /* monica@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "monica@2x.png"; sourceTree = "<group>"; };
+		9D86BBF917EEEEE70028FD81 /* ross@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ross@2x.png"; sourceTree = "<group>"; };
+		9D86BBFA17EEEEE70028FD81 /* chandler@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "chandler@2x.png"; sourceTree = "<group>"; };
 		A61E4DED17EE12AA00FE519D /* Message.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Message.h; sourceTree = "<group>"; };
 		A61E4DEE17EE12AA00FE519D /* Message.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Message.m; sourceTree = "<group>"; };
 		A61E4DF017EE195C00FE519D /* MessageDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MessageDetailViewController.h; sourceTree = "<group>"; };
@@ -252,6 +262,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9D86BBF717EEEDCB0028FD81 /* QuartzCore.framework in Frameworks */,
 				9D66C5DE17ECE9C40019B1F8 /* libiconv.dylib in Frameworks */,
 				9D66C5DA17ECE8050019B1F8 /* AVFoundation.framework in Frameworks */,
 				9D66C51617ECE3B00019B1F8 /* CoreGraphics.framework in Frameworks */,
@@ -317,6 +328,7 @@
 		9D66C51217ECE3B00019B1F8 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				9D86BBF617EEEDCB0028FD81 /* QuartzCore.framework */,
 				9D66C5DD17ECE9C40019B1F8 /* libiconv.dylib */,
 				9D66C5D917ECE8050019B1F8 /* AVFoundation.framework */,
 				9D66C51317ECE3B00019B1F8 /* Foundation.framework */,
@@ -364,6 +376,10 @@
 				9D86BBEE17EEE5760028FD81 /* MessageCell.m */,
 				9D86BBF017EEEA530028FD81 /* UIUnreadIndicator@2x.png */,
 				9D86BBF217EEEB600028FD81 /* none@2x.png */,
+				9D86BBF417EEEDAC0028FD81 /* rachel@2x.png */,
+				9D86BBF817EEEEE70028FD81 /* monica@2x.png */,
+				9D86BBF917EEEEE70028FD81 /* ross@2x.png */,
+				9D86BBFA17EEEEE70028FD81 /* chandler@2x.png */,
 			);
 			name = UI;
 			sourceTree = "<group>";
@@ -678,6 +694,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				A6B6A40D17EE2BA700CDDB89 /* list@2x.png in Resources */,
+				9D86BBFC17EEEEE70028FD81 /* ross@2x.png in Resources */,
+				9D86BBF517EEEDAC0028FD81 /* rachel@2x.png in Resources */,
 				A6B98EE817EDA463007C021E /* 2.jpg in Resources */,
 				9D66C52C17ECE3B00019B1F8 /* Images.xcassets in Resources */,
 				A6B6A40F17EE2C1700CDDB89 /* cart@2x.png in Resources */,
@@ -693,7 +711,9 @@
 				A6B98EE617EDA463007C021E /* 1.jpg in Resources */,
 				A6B6A41317EE350500CDDB89 /* cabinet@2x.png in Resources */,
 				9D66C5D517ECE7620019B1F8 /* zbar-back.png in Resources */,
+				9D86BBFB17EEEEE70028FD81 /* monica@2x.png in Resources */,
 				9D86BBF317EEEB600028FD81 /* none@2x.png in Resources */,
+				9D86BBFD17EEEEE70028FD81 /* chandler@2x.png in Resources */,
 				A6B6A40B17EE2BA700CDDB89 /* calendar@2x.png in Resources */,
 				9D66C5D717ECE7620019B1F8 /* zbar-helpicons.png in Resources */,
 			);
