@@ -64,6 +64,9 @@
 		9D66C5E517ECF4550019B1F8 /* WizardPeriodViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D66C5E417ECF4540019B1F8 /* WizardPeriodViewController.m */; };
 		9D66C5E817ECF4660019B1F8 /* WizardTimeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D66C5E717ECF4660019B1F8 /* WizardTimeViewController.m */; };
 		9D66C5EB17ECF6EB0019B1F8 /* WizardFamilyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D66C5EA17ECF6EB0019B1F8 /* WizardFamilyViewController.m */; };
+		9D86BBEF17EEE5760028FD81 /* MessageCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D86BBEE17EEE5760028FD81 /* MessageCell.m */; };
+		9D86BBF117EEEA530028FD81 /* UIUnreadIndicator@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 9D86BBF017EEEA530028FD81 /* UIUnreadIndicator@2x.png */; };
+		9D86BBF317EEEB600028FD81 /* none@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 9D86BBF217EEEB600028FD81 /* none@2x.png */; };
 		A61E4DEF17EE12AA00FE519D /* Message.m in Sources */ = {isa = PBXBuildFile; fileRef = A61E4DEE17EE12AA00FE519D /* Message.m */; };
 		A61E4DF217EE195C00FE519D /* MessageDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A61E4DF117EE195C00FE519D /* MessageDetailViewController.m */; };
 		A6B6A40B17EE2BA700CDDB89 /* calendar@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A6B6A40817EE2BA700CDDB89 /* calendar@2x.png */; };
@@ -217,6 +220,10 @@
 		9D66C5E717ECF4660019B1F8 /* WizardTimeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WizardTimeViewController.m; sourceTree = "<group>"; };
 		9D66C5E917ECF6EB0019B1F8 /* WizardFamilyViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WizardFamilyViewController.h; sourceTree = "<group>"; };
 		9D66C5EA17ECF6EB0019B1F8 /* WizardFamilyViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WizardFamilyViewController.m; sourceTree = "<group>"; };
+		9D86BBED17EEE5760028FD81 /* MessageCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MessageCell.h; sourceTree = "<group>"; };
+		9D86BBEE17EEE5760028FD81 /* MessageCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MessageCell.m; sourceTree = "<group>"; };
+		9D86BBF017EEEA530028FD81 /* UIUnreadIndicator@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "UIUnreadIndicator@2x.png"; sourceTree = "<group>"; };
+		9D86BBF217EEEB600028FD81 /* none@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "none@2x.png"; sourceTree = "<group>"; };
 		A61E4DED17EE12AA00FE519D /* Message.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Message.h; sourceTree = "<group>"; };
 		A61E4DEE17EE12AA00FE519D /* Message.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Message.m; sourceTree = "<group>"; };
 		A61E4DF017EE195C00FE519D /* MessageDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MessageDetailViewController.h; sourceTree = "<group>"; };
@@ -353,6 +360,10 @@
 			isa = PBXGroup;
 			children = (
 				9D66C52517ECE3B00019B1F8 /* Main.storyboard */,
+				9D86BBED17EEE5760028FD81 /* MessageCell.h */,
+				9D86BBEE17EEE5760028FD81 /* MessageCell.m */,
+				9D86BBF017EEEA530028FD81 /* UIUnreadIndicator@2x.png */,
+				9D86BBF217EEEB600028FD81 /* none@2x.png */,
 			);
 			name = UI;
 			sourceTree = "<group>";
@@ -675,12 +686,14 @@
 				9D66C52717ECE3B00019B1F8 /* Main.storyboard in Resources */,
 				9D66C5D817ECE7620019B1F8 /* zbar-samples.png in Resources */,
 				A6B6A41117EE2F8200CDDB89 /* 4.jpg in Resources */,
+				9D86BBF117EEEA530028FD81 /* UIUnreadIndicator@2x.png in Resources */,
 				A6B6A40C17EE2BA700CDDB89 /* envelope@2x.png in Resources */,
 				A6B98EE717EDA463007C021E /* 3.jpg in Resources */,
 				9D66C5D617ECE7620019B1F8 /* zbar-help.html in Resources */,
 				A6B98EE617EDA463007C021E /* 1.jpg in Resources */,
 				A6B6A41317EE350500CDDB89 /* cabinet@2x.png in Resources */,
 				9D66C5D517ECE7620019B1F8 /* zbar-back.png in Resources */,
+				9D86BBF317EEEB600028FD81 /* none@2x.png in Resources */,
 				A6B6A40B17EE2BA700CDDB89 /* calendar@2x.png in Resources */,
 				9D66C5D717ECE7620019B1F8 /* zbar-helpicons.png in Resources */,
 			);
@@ -733,6 +746,7 @@
 				9D66C54C17ECE5220019B1F8 /* ListViewController.m in Sources */,
 				9D66C5BA17ECE7620019B1F8 /* AFJSONRequestOperation.m in Sources */,
 				9D66C54F17ECE52D0019B1F8 /* DetailViewController.m in Sources */,
+				9D86BBEF17EEE5760028FD81 /* MessageCell.m in Sources */,
 				9D66C5C017ECE7620019B1F8 /* NSArray+Coby.m in Sources */,
 				9D66C5C917ECE7620019B1F8 /* MTLModel+NSCoding.m in Sources */,
 				9D66C5CC17ECE7620019B1F8 /* MTLValueTransformer.m in Sources */,

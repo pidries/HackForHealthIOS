@@ -9,6 +9,7 @@
 #import "Message.h"
 #import "MessagesViewController.h"
 #import "MessageDetailViewController.h"
+#import "MessageCell.h"
 
 @interface MessagesViewController () {
     NSMutableArray* messages;
@@ -69,6 +70,12 @@
     [outputFormatter setDateFormat:@"dd/MM/yyyy "];
 }
 
+- (void)viewWillAppear:(BOOL)animated {
+    [super viewWillAppear:animated];
+    
+    [self.tableView reloadData];
+}
+
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];
@@ -79,6 +86,7 @@
     if ([segue.identifier isEqualToString:@"Detail"]) {
         MessageDetailViewController *destination = [segue destinationViewController];
         destination.message = [messages objectAtIndex:self.tableView.indexPathForSelectedRow.row];
+        destination.message.isRead = YES;
     }
 }
 
@@ -91,11 +99,13 @@
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     static NSString *CellIdentifier = @"Cell";
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier forIndexPath:indexPath];
+    MessageCell *cell = (MessageCell *)[tableView dequeueReusableCellWithIdentifier:CellIdentifier forIndexPath:indexPath];
     
     Message *med = [messages objectAtIndex:indexPath.row];
     
-    cell.textLabel.text = [NSString stringWithFormat:@"%@%@", [outputFormatter stringFromDate:med.receivedDate],med.title];
+    cell.textLabel.text = med.title;
+    cell.detailTextLabel.text = [outputFormatter stringFromDate:med.receivedDate];
+    cell.read = med.isRead;
     
     return cell;
 }
