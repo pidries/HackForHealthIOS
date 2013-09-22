@@ -11,6 +11,7 @@
 @interface MessageDetailViewController ()
 @property (weak, nonatomic) IBOutlet UILabel *receivedDate;
 @property (weak, nonatomic) IBOutlet UILabel *receivedMessage;
+@property (weak, nonatomic) IBOutlet UILabel *receivedTitle;
 
 @end
 
@@ -19,7 +20,7 @@
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
-    if (self) {
+    if (self) { 
         // Custom initialization
     }
     return self;
@@ -45,6 +46,7 @@
 
     
     _receivedDate.text = [formatter stringFromDate:_message.receivedDate];
+    _receivedTitle.text = _message.title;
     _receivedMessage.text = _message.message;
     
     
