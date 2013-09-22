@@ -24,3 +24,9 @@
 
 #define kDidAddMedicinNotification @"kDidAddMedicinNotification"
 #define kDidAddMedicinToCartNotification @"kDidAddMedicinToCartNotification"
+
+//fakes addition of two dafalgans
+#define kFakeDafalganNotification @"FakeDafalgans"
+
+//entering background starts a notification to clear lists to default values
+#define kDidEnterBackgroundNotification @"enteredBackground"

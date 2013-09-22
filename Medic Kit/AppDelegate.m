@@ -51,6 +51,10 @@
 }
 
 - (void)applicationDidEnterBackground:(UIApplication *)application {
+    
+    //minimize app should clear lists to default data
+    [[NSNotificationCenter defaultCenter] postNotificationName:kDidEnterBackgroundNotification object:nil];
+    
     NSDate *alertTime = [[NSDate date]
                          dateByAddingTimeInterval:10];
     UIApplication* app = [UIApplication sharedApplication];
