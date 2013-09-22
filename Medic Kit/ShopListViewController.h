@@ -10,4 +10,6 @@
 
 @interface ShopListViewController : UITableViewController
 
+@property (strong, nonatomic) NSMutableArray *medicines;
+
 @end
