@@ -850,14 +850,15 @@ AQABAAEAAQAB//+dkAEA//+PgAAE//+dkAEI//+dkAEMUERUAFBTVABQV1QAUFBUAAAAAAEAAAABA
         <image name="cart.png" width="30" height="30"/>
         <image name="envelope.png" width="30" height="30"/>
     </resources>
+    <color key="tintColor" red="0.4901961088180542" green="0.69803923368453979" blue="0.4901961088180542" alpha="1" colorSpace="deviceRGB"/>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
         <simulatedOrientationMetrics key="orientation"/>
         <simulatedScreenMetrics key="destination" type="retina4"/>
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
-        <segue reference="jbn-il-ZbP"/>
-        <segue reference="up3-qC-c70"/>
         <segue reference="hIB-SP-yGZ"/>
+        <segue reference="OLQ-ei-Dqt"/>
+        <segue reference="up3-qC-c70"/>
     </inferredMetricsTieBreakers>
 </document>
