@@ -20,6 +20,7 @@
 {
     [super viewDidLoad];
     [self createCrapData];
+    
 }
 
 - (void)didReceiveMemoryWarning
@@ -31,18 +32,40 @@
 - (void)viewWillAppear:(BOOL)animated {
     [super viewWillAppear:animated];
     
-    self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemAdd target:self action:@selector(didPressAdd:)];
+    NSMutableArray *buttons = [NSMutableArray new];
+    
+    [buttons addObject:[[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemAdd target:self action:@selector(didPressAdd:)]];
+    [buttons insertObject:[[UIBarButtonItem alloc] initWithTitle:@"Checkout" style:UIBarButtonItemStyleBordered target:self action:@selector(didPressCheckout:)] atIndex:0];
+    self.navigationItem.rightBarButtonItems = buttons;
+
+    [self.tableView reloadData];
 }
+
+#pragma mark - actions
 
 - (IBAction)didPressAdd:(id)sender {
     
-
+}
+- (IBAction)didPressCheckout:(id)sender {
+    _medicines = [NSMutableArray new];
+    [self performSegueWithIdentifier:@"toCheckout" sender:nil];
 }
 
 #pragma  mark - table
 
 -(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    return nil;
+    static NSString *CellIdentifier = @"Cell";
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier forIndexPath:indexPath];
+    
+    Medicine *med = [_medicines objectAtIndex:indexPath.row];
+    
+    cell.textLabel.text = med.name;
+    cell.detailTextLabel.text = [NSString stringWithFormat:@"€%d", med.price];
+    return cell;
+}
+
+-(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
+    return _medicines.count;
 }
 
 -(NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
@@ -63,6 +86,7 @@
     med.name = @"Dafalgan Forte";
     med.description = @"Painkiller";
     med.nextIntake = date;
+    med.price = 25;
     Packaging *package = [Packaging new];
     package.id = [NSNumber numberWithInt:12345];
     package.description = @"Dafalgan tab Forte 50x 1 g";
@@ -78,6 +102,7 @@
     med2.name = @"Orofar Lidocaine 1/1";
     med2.description = @"Painkiller";
     med2.nextIntake = date2;
+    med2.price = 10;
     Packaging *package2 = [Packaging new];
     package2.id = [NSNumber numberWithInt:12345];
     package2.description = @"Orofar Lidocaine 1/1 36 pearls Mint";
@@ -93,6 +118,7 @@
     med3.name = @"Sinutab Forte";
     med3.description = @"Painkiller";
     med3.nextIntake = date3;
+    med3.price = 15;
     Packaging *package3 = [Packaging new];
     package3.id = [NSNumber numberWithInt:12345];
     package3.description = @"Sinutab Forte 20x tablets 500/60 mg";
@@ -109,6 +135,7 @@
     med4.name = @"Zyrtec 10 mg";
     med4.description = @"Anti-histaminicum";
     med4.nextIntake = date4;
+    med4.price = 20;
     Packaging *package4 = [Packaging new];
     package4.id = [NSNumber numberWithInt:869347];
     package4.description = @"Zyrtec 10 mg tablet";
@@ -125,12 +152,14 @@
     med5.name = @"Seretide diskus 50/500 mg";
     med5.description = @"Painkiller";
     med5.nextIntake = date5;
+    med5.price = 35;
     Packaging *package5 = [Packaging new];
     package5.id = [NSNumber numberWithInt:869347];
     package5.description = @"Seretide diskus 50/500 mg inhalation powder";
     package5.image = [UIImage imageNamed:@"5.jpg"];
     package5.leafletNL = @"http://bijsluiters.fagg-afmps.be/DownloadLeafletServlet?id=4680";
     med5.package = package5;
+    [_medicines addObject:med5];
 }
 
 
