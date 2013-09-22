@@ -35,4 +35,18 @@
     }
 }
 
+#pragma mark - actions
+- (IBAction)didPressAddToCart:(id)sender {
+    [self dismissViewControllerAnimated:YES completion:^{
+        [[NSNotificationCenter defaultCenter] postNotificationName:kDidAddMedicinToCartNotification object:nil];
+    }];
+}
+
+- (IBAction)didPressPlanIntake:(id)sender {
+    [self dismissViewControllerAnimated:YES completion:^{
+        [[NSNotificationCenter defaultCenter] postNotificationName:kDidAddMedicinNotification object:nil];
+    }];
+}
+
+
 @end
