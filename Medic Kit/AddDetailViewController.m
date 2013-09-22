@@ -18,7 +18,7 @@
 
 - (void)viewWillAppear:(BOOL)animated {
     
-    self.title = _medicine.name;
+    self.title = @"Dafalgan Forte";//_medicine.name;
     
     self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemCancel target:self action:@selector(didPressCancel:)];
 }
